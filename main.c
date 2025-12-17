@@ -6,38 +6,38 @@
 //结构体定义
 
 //生日（年月日）
-struct birth{
+typedef struct{
 	int year;
 	int month;
 	int day;
 }birth;
 
 //学生信息
-struct stu{
+typedef struct{
 	char name[30];
 	char id[8];
 	char sex[2];
-	struct birth bir;
+	birth bir;
 	char addr[100];
 	char phone[15];
 	char email[50];
 }stu;
 
 //课程信息
-struct class {
+typedef struct{
 	char class_id[50];
 	char class_name[50];
 	int score;
-};
+}class;
 
 //成绩信息
-struct score {
-	struct class cls;
-	struct stu stu;
+typedef struct{
+    class cls;
+	stu stu;
 	int mark;
 	int avg;
 	int sum;
-};
+}score;
 
 
 void main() {

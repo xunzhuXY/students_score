@@ -112,7 +112,7 @@ void m31_choose(){
 	case 0:
 		break;
 	case 1:
-		input_search_stu();
+		input_search();
 		break;
 	}
 	return;

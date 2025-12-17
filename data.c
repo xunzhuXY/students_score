@@ -52,7 +52,7 @@ void add_stu(stu stus,const char* filename) {
     fprintf(file, "学号：%s\n", stus.id);
 	fprintf(file, "姓名：%s\n", stus.name);
     fprintf(file, "性别：%s\n", stus.sex);
-	fprintf(file, "出生日期：%d-%d-%d\n", stus.bir.year, stus.bir.month, stus.bir.day);
+	fprintf(file, "生日：%d-%d-%d\n", stus.bir.year, stus.bir.month, stus.bir.day);
 	fprintf(file, "地址：%s\n", stus.addr);
 	fprintf(file, "电话：%s\n", stus.phone);
 	fprintf(file, "邮箱：%s\n", stus.email);

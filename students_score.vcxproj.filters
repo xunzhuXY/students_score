@@ -21,9 +21,15 @@
     <ClCompile Include="tool.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="data.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tool.h">
+    <ClInclude Include="common.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>

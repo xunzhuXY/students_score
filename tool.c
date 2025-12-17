@@ -22,8 +22,10 @@ int m1_start1(){
 	scanf("%d", &c);
 	switch (c){
 	case 0:
-		printf("quit\n");
+		printf("ÒÑÍË³ö\n");
 		return 1;
 		break;
+	default:
+		return 0;
 	}
 }

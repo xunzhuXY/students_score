@@ -32,8 +32,11 @@ void menu21() {
 	printf("\n");
 	printf("0.返回上一级菜单\n");
 	printf("1.修改学生信息\n");
-	printf("2.修改课程信息\n");
-	printf("3.修改成绩信息\n");
+	printf("2.删除学生信息\n");
+	printf("3.修改课程信息\n");
+	printf("4.删除课程信息\n");
+	printf("5.修改成绩信息\n");
+	printf("6.删除成绩信息\n");
 	printf("\n");
 	m21_choose();
 	return;
@@ -43,8 +46,11 @@ void menu31() {
 	printf("\n");
 	printf("0.返回上一级菜单\n");
 	printf("1.读取学生信息\n");
-	printf("2.读取课程信息\n");
-	printf("3.读取成绩信息\n");
+	printf("2.读取所有学生信息\n");
+	printf("3.读取课程信息\n");
+	printf("4.读取所有课程信息\n");
+	printf("5.读取成绩信息\n");
+	printf("6.读取所有成绩信息\n");
 	printf("\n");
 	m31_choose();
 	return;
@@ -98,7 +104,10 @@ void m21_choose(){
 	case 0:
 		break;
 	case 1:
-		printf("录入学生信息\n");
+		modify_stu("students.txt");
+		break;
+	case 2:
+		delete_stu("students.txt");
 		break;
 	}
 	return;
@@ -113,6 +122,9 @@ void m31_choose(){
 		break;
 	case 1:
 		input_search();
+		break;
+	case 2:
+		display_all_stu("students.txt");
 		break;
 	}
 	return;

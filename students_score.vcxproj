@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="data.c" />
+    <ClCompile Include="stu.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="tool.c" />
   </ItemGroup>

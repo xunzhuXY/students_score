@@ -4,7 +4,7 @@
 #include <string.h>
 
 void modify_stu(const char* filename) {
-	FILE* file = fopen(filename, "r");  // 追加模式
+	FILE* file = fopen(filename, "r");  // 阅读模式
 	if (file == NULL) {
 		printf("无法打开文件 %s！\n", filename);
 		return;
@@ -113,7 +113,7 @@ stu input_stu() {
 	getchar();
 
     printf("\n");
-    printf("---开始输入---\n");
+    printf("---开始输入学生信息---\n");
 
 	printf("学号：");
 	fgets(stu0.id, sizeof(stu0.id), stdin);
@@ -209,6 +209,7 @@ void search_stu(const char* filename,char* name,char* id) {
 				if (strcmp(current_stu.id, id) == 0 && strcmp(current_stu.name, name) == 0) {
 					found = 1;
 					printf("\n找到匹配的学生信息：\n");
+					printf("---\n");
 					printf("学号:%s\n", current_stu.id);
 					printf("名字:%s\n", current_stu.name);
 					printf("性别:%s\n", current_stu.sex);
@@ -217,6 +218,7 @@ void search_stu(const char* filename,char* name,char* id) {
 					printf("地址:%s\n", current_stu.addr);
 					printf("电话:%s\n", current_stu.phone);
 					printf("邮箱:%s\n", current_stu.email);
+					printf("---\n");
 				}
 				in_record = 0;
 				lines_in_record = 0;
@@ -261,7 +263,7 @@ void search_stu(const char* filename,char* name,char* id) {
 	}
 
 	if (!found) {
-		printf("查无此人");
+		printf("查无此人\n");
 	}
 
 	fclose(file);

@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\common">
-      <UniqueIdentifier>{33514625-c2e6-4664-8530-eb447862cd82}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\data">
-      <UniqueIdentifier>{cbcd1238-3479-45e3-b6b8-d1b513320009}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -28,15 +22,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="stu.c">
-      <Filter>源文件\data</Filter>
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="class.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="score.c">
+      <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
-      <Filter>源文件\common</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="struct.h">
-      <Filter>源文件\common</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

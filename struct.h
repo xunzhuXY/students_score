@@ -30,9 +30,11 @@ typedef struct {
 
 //≥…º®–≈œ¢
 typedef struct {
-	char id[8];
 	char class_id[50];
-	int score;
+	char class_name[50];
+	char id[8];
+	char name[30];
+	int mark;
 }score;
 
 #endif // !struct_h

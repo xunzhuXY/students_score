@@ -82,6 +82,9 @@ int m1_choose(){
 }
 
 void m11_choose(){
+	stu new_stu;
+	class new_class;
+	score new_score;
 	int c1;
 	scanf("%d", &c1);
 	switch (c1)
@@ -89,9 +92,15 @@ void m11_choose(){
 	case 0:
 		break;
 	case 1:
-		stu new_stu = input_stu();
+		new_stu = input_stu();
 		add_stu(new_stu, "students.txt");
 		break;
+	case 2:
+		new_class = input_class();
+		add_class(new_class, "classes.txt");
+	case 3:
+		new_score = input_score();
+		add_score(new_score, "scores.txt");
 	}
 	return;
 }
@@ -109,6 +118,18 @@ void m21_choose(){
 	case 2:
 		delete_stu("students.txt");
 		break;
+	case 3:
+		modify_class("classes.txt");
+		break;
+	case 4:
+		delete_class("classes.txt");
+		break;
+	case 5:
+		modify_score("scores.txt");
+		break;
+	case 6:
+		delete_score("scores.txt");
+		break;
 	}
 	return;
 }
@@ -125,6 +146,18 @@ void m31_choose(){
 		break;
 	case 2:
 		display_all_stu("students.txt");
+		break;
+	case 3:
+		input_class_search();
+		break;
+	case 4:
+		display_all_class("classes.txt");
+		break;
+	case 5:
+		input_score_search();
+		break;
+	case 6:
+		display_all_score("scores.txt");
 		break;
 	}
 	return;
